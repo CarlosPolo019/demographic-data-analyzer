@@ -1,0 +1,29 @@
+{
+  "name": "demographic-data-analyzer",
+  "version": "1.0.0",
+  "description": "Librería para procesar y analizar datos demográficos y censales en archivos Excel, basado en censos y conteos de población.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demographics",
+    "census",
+    "INEGI",
+    "population",
+    "excel",
+    "data-analysis"
+  ],
+  "author": "Carlos Escorcia cmescorcia5@icloud.com",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "exceljs": "^4.4.0",
+    "xlsx": "^0.18.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarlosPolo019/google-sheets-uploader.git"
+  },
+  "homepage": "https://carlosportafolio.vercel.app/"
+}
