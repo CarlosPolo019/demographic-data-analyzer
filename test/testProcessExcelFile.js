@@ -1,6 +1,6 @@
 const { expect } = require('chai');
 const path = require('path');
-const { processExcelFile } = require('../src/excelProcessor');
+const { processExcelFile } = require('../lib/excelProcessor');
 
 describe('processExcelFile', function () {
   it('debería procesar correctamente el archivo Excel', async function () {
