@@ -1,5 +1,5 @@
 {
-  "name": "demographic-data-analyzer",
+  "name": "inegi-demographic-data-analyzer",
   "version": "1.0.0",
   "description": "Librería para procesar y analizar datos demográficos y censales en archivos Excel, basado en censos y conteos de población.",
   "main": "index.js",

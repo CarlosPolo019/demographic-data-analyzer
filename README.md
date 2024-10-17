@@ -8,7 +8,7 @@ Esta librería está diseñada para facilitar el análisis de información demog
 Para instalar la librería en tu proyecto, ejecuta el siguiente comando:
 
 ```bash
-npm install demographic-data-analyzer
+npm install inegi-demographic-data-analyzer
 ```
 
 ## 🚀 Uso de la Librería
@@ -18,7 +18,7 @@ npm install demographic-data-analyzer
 En tu proyecto, importa la función `processExcelFile` y especifica los campos de población que deseas procesar. Aquí tienes un ejemplo:
 
 ```javascript
-const { processExcelFile } = require('demographic-data-analyzer');
+const { processExcelFile } = require('inegi-demographic-data-analyzer');
 
 // Define los campos de población que deseas extraer
 const camposPoblacion = ['POBTOT', 'POBFEM', 'POBMAS'];
