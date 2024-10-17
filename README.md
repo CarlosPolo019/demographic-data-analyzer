@@ -91,6 +91,15 @@ Clona el repositorio y configura las dependencias en tu proyecto con el siguient
 npm install
 ```
 
+Si vas a procesar archivos grandes, asegúrate de asignar más memoria al proceso de Node.js. Puedes hacerlo con el siguiente comando:
+
+
+```bash
+node --max-old-space-size=4096 test.js
+
+```
+
+
 ## ✅ Pruebas
 
 El proyecto puede incluir un directorio `test` para validar el correcto procesamiento de los datos. Puedes ejecutar las pruebas unitarias con el siguiente comando:
