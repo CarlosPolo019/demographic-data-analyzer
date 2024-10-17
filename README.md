@@ -27,46 +27,68 @@ Antes de ejecutar el análisis, debes definir los campos de población que desea
 
 ```javascript
 const camposPoblacion = ['POBTOT', 'POBFEM', 'POBMAS']; // Puedes agregar más campos según el diccionario de datos
-4. Ejecutar el Análisis
+```
+
+### 4. Ejecutar el Análisis
+
 Para procesar el archivo Excel y extraer los datos demográficos, simplemente ejecuta el siguiente comando en tu terminal:
 
-bash
+```bash
 node src/index.js
+```
+
 El sistema procesará el archivo, extraerá la información según los campos que especificaste y generará un nuevo archivo Excel con la información organizada.
 
-📑 Diccionario de Datos
-En la hoja Diccionario de Datos del archivo Excel generado, puedes encontrar una descripción detallada de cada campo disponible, como por ejemplo:
+### 📑 Diccionario de Datos
 
-ENTIDAD: Clave de la entidad federativa.
-NOM_ENT: Nombre de la entidad federativa.
-MUN: Clave del municipio.
-NOM_MUN: Nombre del municipio.
-POBTOT: Población total.
-POBFEM: Población femenina.
-POBMAS: Población masculina.
-⚠️ Nota: La información de la población es dinámica, lo que significa que puedes personalizar los campos que necesitas antes de ejecutar el análisis. Para ello, asegúrate de seguir las instrucciones del diccionario de datos y especificar los campos en el archivo index.js.
+En la hoja *Diccionario de Datos* del archivo Excel generado, puedes encontrar una descripción detallada de cada campo disponible, como por ejemplo:
 
-📦 Dependencias
+- **ENTIDAD**: Clave de la entidad federativa.
+- **NOM_ENT**: Nombre de la entidad federativa.
+- **MUN**: Clave del municipio.
+- **NOM_MUN**: Nombre del municipio.
+- **POBTOT**: Población total.
+- **POBFEM**: Población femenina.
+- **POBMAS**: Población masculina.
+
+⚠️ **Nota**: La información de la población es dinámica, lo que significa que puedes personalizar los campos que necesitas antes de ejecutar el análisis. Para ello, asegúrate de seguir las instrucciones del diccionario de datos y especificar los campos en el archivo `index.js`.
+
+## 📦 Dependencias
+
 Las principales dependencias utilizadas en este proyecto son:
 
-ExcelJS: Para la lectura y escritura de archivos Excel.
-xlsx: Para la conversión de archivos Excel.
-csv-parser: Para procesar archivos CSV en caso de necesidad futura.
-🛠️ Instalación
+- **ExcelJS**: Para la lectura y escritura de archivos Excel.
+- **xlsx**: Para la conversión de archivos Excel.
+- **csv-parser**: Para procesar archivos CSV en caso de necesidad futura.
+
+## 🛠️ Instalación
+
 Clona el repositorio:
 
-git clone https://github.com/CarlosPolo019/demographic-data-analyzer.git
+```bash
+git clone https://github.com/tuusuario/demographic-data-analyzer.git
+```
+
 Instala las dependencias:
 
+```bash
 npm install
-✅ Pruebas
-El proyecto incluye un directorio test con pruebas unitarias para validar el procesamiento de los datos. Puedes ejecutar las pruebas con:
+```
 
+## ✅ Pruebas
+
+El proyecto incluye un directorio `test` con pruebas unitarias para validar el procesamiento de los datos. Puedes ejecutar las pruebas con:
+
+```bash
 npm test
-🎯 Contribuciones
+```
+
+## 🎯 Contribuciones
+
 Este proyecto está abierto a contribuciones. Si deseas agregar nuevas funcionalidades o corregir errores, no dudes en hacer un pull request.
 
-📧 Contacto
-Para preguntas o sugerencias, puedes contactarme en: tucorreo@example.com
+## 📧 Contacto
+
+Para preguntas o sugerencias, puedes contactarme en: cmescorcia5@icloud.com
 
 ¡Gracias por usar el Analizador de Datos Demográficos! 🚀
