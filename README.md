@@ -13,9 +13,17 @@ npm install inegi-demographic-data-analyzer
 
 ## 🚀 Uso de la Librería
 
-### 1. Procesar un Archivo Excel
+### 1. Descargar el Archivo CSV de INEGI
 
-En tu proyecto, importa la función `processExcelFile` y especifica los campos de población que deseas procesar. Aquí tienes un ejemplo:
+Antes de procesar los datos, es necesario descargar el archivo CSV con la información demográfica desde la página del **INEGI**. Puedes hacerlo desde el siguiente enlace:
+
+[**Descargar datos del Censo de Población y Vivienda 2020**](https://www.inegi.org.mx/programas/ccpv/2020/#datos_abiertos)
+
+Elige el conjunto de datos que deseas analizar y descárgalo en formato CSV. Luego, utiliza un programa como **Microsoft Excel** o **Google Sheets** para convertir el archivo CSV a formato Excel (`.xlsx`).
+
+### 2. Procesar el Archivo Excel
+
+Una vez que hayas convertido el archivo CSV a Excel, puedes utilizar la librería para procesar los datos. Aquí tienes un ejemplo de cómo hacerlo:
 
 ```javascript
 const { processExcelFile } = require('inegi-demographic-data-analyzer');
@@ -37,7 +45,7 @@ processExcelFile(filePath, camposPoblacion)
   });
 ```
 
-### 2. Descripción de la Función `processExcelFile`
+### 3. Descripción de la Función `processExcelFile`
 
 La función `processExcelFile` recibe la ruta del archivo Excel y una lista de campos demográficos que deseas procesar (como `'POBTOT'`, `'POBFEM'`, etc.). Esta función:
 
@@ -45,7 +53,7 @@ La función `processExcelFile` recibe la ruta del archivo Excel y una lista de c
 - Crea un nuevo archivo Excel con la información organizada en diferentes hojas: **Entidades**, **Municipios**, **Localidades**, y **Población**.
 - Añade una hoja llamada *Diccionario de Datos* que describe los campos disponibles.
 
-### 3. Diccionario de Datos
+### 4. Diccionario de Datos
 
 El *Diccionario de Datos* es una hoja que se añade al archivo Excel generado y contiene una descripción detallada de cada campo disponible, como por ejemplo:
 
@@ -59,7 +67,7 @@ El *Diccionario de Datos* es una hoja que se añade al archivo Excel generado y 
 
 ⚠️ **Nota**: La información de la población es dinámica, lo que significa que puedes personalizar los campos que necesitas antes de ejecutar el análisis.
 
-### 4. Configuración de los Campos
+### 5. Configuración de los Campos
 
 Antes de ejecutar el análisis, debes definir los campos de población que deseas procesar en tu proyecto, tal como se muestra en el siguiente ejemplo:
 
@@ -98,7 +106,6 @@ Si vas a procesar archivos grandes, asegúrate de asignar más memoria al proces
 node --max-old-space-size=4096 test.js
 
 ```
-
 
 ## ✅ Pruebas
 
